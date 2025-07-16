@@ -1,0 +1,1 @@
+export enum LocaleCode {EN = 'en', HE = 'he', SV = 'sv'}
