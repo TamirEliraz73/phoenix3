@@ -1,4 +1,4 @@
-import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import SeasonTeam from "#/data/static/SeasonTeam";
 import {
     AIK,
     BKHacken,
@@ -16,7 +16,7 @@ import {
     MalmoFF,
     MjallbyAIF,
     OstersIF
-} from "../../../../../data/static/Teams";
+} from "#/data/static/teams";
 
 export const Allsvenskan25_26LiveData: SeasonTeam[] = [
     SeasonTeam.create(AIK, 9, 5, 2, 24, 14),

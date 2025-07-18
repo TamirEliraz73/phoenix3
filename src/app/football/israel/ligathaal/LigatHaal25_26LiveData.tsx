@@ -1,4 +1,4 @@
-import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import SeasonTeam from "#/data/static/SeasonTeam";
 import {
     BeitarJerusalem,
     BneiSakhnin,
@@ -14,7 +14,7 @@ import {
     MaccabiTelAviv,
     IroniTiberias,
     IroniKiryatShmona
-} from "../../../../../data/static/Teams";
+} from "#/data/static/teams";
 
 export const LigatHaal25_26LiveData: SeasonTeam[] = [
     SeasonTeam.create(BeitarJerusalem, 0, 0, 0, 0, 0),

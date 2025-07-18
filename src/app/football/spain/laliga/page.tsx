@@ -3,9 +3,9 @@ import {JSX} from "react";
 import {LaLiga25_26LiveData} from "@/app/football/spain/laliga/LaLiga25_26LiveData";
 import LeagueTable from "@/app/football/LeagueTable";
 import NextMatchCard from "@/app/football/NextMatchCard";
-import {Barcelona, Mallorca, Osasuna, RealMadrid} from "../../../../../data/static/Teams";
+import {Barcelona, Mallorca, Osasuna, RealMadrid} from "#/data/static/teams";
 import {useTranslation} from "@/lib/i18n/LocaleTranslation";
-import { LaLiga } from "../../../../../data/static/Leagues";
+import { LaLiga } from "#/data/static/Leagues";
 
 export default function LaLigaPage(): JSX.Element {
     const {t} = useTranslation();

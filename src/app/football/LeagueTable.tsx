@@ -3,7 +3,7 @@ import {JSX, ReactNode} from "react";
 import SeasonTeam from "../../../data/static/SeasonTeam";
 import {useTranslation} from "@/lib/i18n/LocaleTranslation";
 import {LocaleNamespace} from "@/lib/i18n/config";
-import {Barcelona, IFKNorrkoping, MaccabiTelAviv, TBD} from "../../../data/static/Teams";
+import {Barcelona, IFKNorrkoping, MaccabiTelAviv, TBD} from "#/data/static/teams";
 import UIdGenerator from "@/generators/UIdGenerator";
 import Image from "next/image";
 import League from "../../../data/static/League";
@@ -55,32 +55,35 @@ function LeagueTableBody({teams, league, size}: LeagueTableProps) {
     return (
         <tbody className="text-white/90 divide-y divide-blue-700">
             {sortedTable.map((team: SeasonTeam, index: number): JSX.Element => {
-                const place:number = index + 1;
+                const place: number = index + 1;
                 const isNorrkoping: boolean = team.team === IFKNorrkoping;
                 const isBarcelona: boolean = team.team === Barcelona;
                 const isMaccabiTelAviv: boolean = team.team === MaccabiTelAviv;
 
                 // צבע רקע לפי מיקום
-                let rowClass = league.getRowClass?.(place) ?? "";
+                const rowClass = league.getRowClass(place);
 
-                if (isNorrkoping || isBarcelona || isMaccabiTelAviv) rowClass += " ring-2 ring-cyan-400 font-bold";
+                // if (isNorrkoping || isBarcelona || isMaccabiTelAviv) rowClass += " ring-2 ring-cyan-400 font-bold";
 
                 return (
-                    <tr key={UIdGenerator.generate() + index} className={rowClass}>
-                        <td className="py-2 ps-2 font-bold text-yellow-400">{place}</td>
+                    <tr key={UIdGenerator.generate() + index}
+                        className={(isNorrkoping || isBarcelona || isMaccabiTelAviv) ? `${rowClass} ring-2 ring-cyan-400 font-bold` : `${rowClass}`}>
+                        <td className={`py-2 ps-2 font-bold text-yellow-400`}>{place}</td>
                         <td className={`py-2 font-medium ${team.team.logo ? 'flex flex-row gap-2 items-center' : ''}`}>
                             {team.team.logo &&
                                 <Image src={team.team.logo} alt={team.name.toString()} width={20} height={20}
                                        className={'select-none'}/>}
-                            {t(team.name)}</td>
-                        <td className="py-2 text-start">{team.matches}</td>
-                        <td className="py-2 text-start">{team.wins}</td>
-                        <td className="py-2 text-start">{team.draws}</td>
-                        <td className="py-2 text-start">{team.losses}</td>
-                        <td className="py-2 text-start">{team.goalsFor}</td>
-                        <td className="py-2 text-start">{team.goalsAgainst}</td>
-                        <td className="py-2 text-start">{plusMinusString(team.goalsDifference)}</td>
-                        <td className="py-2 text-start">{team.points}</td>
+                            {
+                                t(team.name)
+                            }</td>
+                        <td className={`py-2 text-start`}>{team.matches}</td>
+                        <td className={`py-2 text-start`}>{team.wins}</td>
+                        <td className={`py-2 text-start`}>{team.draws}</td>
+                        <td className={`py-2 text-start`}>{team.losses}</td>
+                        <td className={`py-2 text-start`}>{team.goalsFor}</td>
+                        <td className={`py-2 text-start`}>{team.goalsAgainst}</td>
+                        <td className={`py-2 text-start`}>{plusMinusString(team.goalsDifference)}</td>
+                        <td className={`py-2 text-start`}>{team.points}</td>
                         {/*<td className="py-2 text-start">{index > 0 && sortedTable[index-1].points - team.points}</td>*/}
                     </tr>
                 );

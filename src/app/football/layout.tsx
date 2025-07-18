@@ -1,30 +1,8 @@
 // app/football/layout.tsx
 'use client';
 import { JSX, ReactNode } from "react";
-import {usePathname} from "next/navigation";
-import {useTranslation} from "@/lib/i18n/LocaleTranslation";
-import {LocaleNamespace} from "@/lib/i18n/config";
-import {IRString} from "@/lib/i18n/IRString";
-type Team = {
-    name: IRString | string
-    shortName:IRString | string
-    displayName:IRString
-}
-const AtleticoMadrid: Team = {
-    name: "Atlético Madrid",
-    shortName: "ATM",
-    displayName: new IRString("football.atleticomadrid")
-};
-const Barcelona: Team = {
-    name: "Barcelona",
-    shortName: "BAR",
-    displayName: new IRString("football.barcelona")
-};
-const RealMadrid: Team = {
-    name: "Real Madrid",
-    shortName: "RMA",
-    displayName: new IRString("football.realmadrid")
-};
+import {Barcelona, RealMadrid, AtleticoMadrid} from '#/data/static/teams'
+
 const teams :Team[] = [Barcelona,RealMadrid, AtleticoMadrid]
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')

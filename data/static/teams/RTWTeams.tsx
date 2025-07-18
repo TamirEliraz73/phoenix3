@@ -1,0 +1,34 @@
+import Team from "../Team";
+import {ChampionsLeague} from "../Leagues";
+
+export const Ajax = Team.create("football.ajax", ChampionsLeague, "football.johancruijffarena");
+// export const Arsenal = Team.create("football.arsenal", ChampionsLeague, "football.emirates");
+export const Atalanta = Team.create("football.atalanta", ChampionsLeague, "football.gewiss", 'https://assets.stickpng.com/images/584ab05530d6736bca3d6e08.png');
+// export const AthleticBilbao = Team.create("football.athleticbilbao", ChampionsLeague, "football.sanmanes");
+// export const AtleticoMadrid = Team.create("football.atleticomadrid", ChampionsLeague, "football.metropolitano");
+// export const Barcelona = Team.create("football.barcelona", ChampionsLeague, "football.campnou");
+export const BayernMunich = Team.create("football.bayernmunich", ChampionsLeague, "football.allianz", 'https://assets.stickpng.com/images/584d8683367b6a13e54477d4.png');
+export const BayerLeverkusen = Team.create("football.bayerleverkusen", ChampionsLeague, "football.bayarena", 'https://assets.stickpng.com/images/584d8651367b6a13e54477d1.png');
+export const BorussiaDortmund = Team.create("football.borussiadortmund", ChampionsLeague, "football.signalidunapark", 'https://assets.stickpng.com/images/584d8678367b6a13e54477d3.png');
+// export const Chelsea = Team.create("football.chelsea", ChampionsLeague, "football.stamfordbridge");
+export const EintrachtFrankfurt = Team.create("football.eintrachtfrankfurt", ChampionsLeague, "football.deutschebankpark", 'https://assets.stickpng.com/images/584d865b367b6a13e54477d2.png');
+export const Galatasaray = Team.create("football.galatasaray", ChampionsLeague, "football.ramspark");
+export const InterMilan = Team.create("football.intermilan", ChampionsLeague, "football.giuseppe", 'https://assets.stickpng.com/images/584aaf7130d6736bca3d6ded.png');
+export const Juventus = Team.create("football.juventus", ChampionsLeague, "football.allianzstadium", 'https://assets.stickpng.com/images/584aaf6330d6736bca3d6deb.png');
+// export const Liverpool = Team.create("football.liverpool", ChampionsLeague, "football.anfield",'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e5.png');
+// export const ManchesterCity = Team.create("football.manchestercity", ChampionsLeague, "football.etihad",'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e6.png');
+export const Marseille = Team.create("football.marseille", ChampionsLeague, "football.velodrome", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d2.png');
+export const Monaco = Team.create("football.monaco", ChampionsLeague, "football.louis");
+export const Napoli = Team.create("football.napoli", ChampionsLeague, "football.diegomaradona", 'https://assets.stickpng.com/images/584ab0fb30d6736bca3d6e1c.png');
+// export const NewcastleUnited = Team.create("football.newcastle", ChampionsLeague, "football.stjamespark",'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ec.png');
+export const Olympiacos = Team.create("football.olympiacos", ChampionsLeague, "football.karaiskakis");
+export const ParisSG = Team.create("football.psg", ChampionsLeague, "football.parcdesprinces", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d8.png');
+export const PSV = Team.create("football.psv", ChampionsLeague, "football.philipsstadion");
+// export const RealMadrid = Team.create("football.realmadrid", ChampionsLeague, "football.bernabeu");
+export const SlaviaPrague = Team.create("football.slaviaprague", ChampionsLeague, "football.edensecurity");
+export const SportingCP = Team.create("football.sportingcp", ChampionsLeague, "football.josealvalade");
+export const Tottenham = Team.create("football.tottenham", ChampionsLeague, "football.tottenhamstadium", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ee.png');
+export const UnionSG = Team.create("football.unionsg", ChampionsLeague, "football.stadion", 'https://assets.stickpng.com/images/584aa027715f776a8080c429.png');
+// export const Villarreal = Team.create("football.villarreal", ChampionsLeague, "football.ceramica");
+
+export const TBD = Team.create("football.tbd", ChampionsLeague, "football.tbd");

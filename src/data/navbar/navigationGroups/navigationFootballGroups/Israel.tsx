@@ -1,10 +1,11 @@
 import {IRString} from "@/lib/i18n/IRString";
 import NavigationOption from "@/data/navbar/NavigationOption";
+import {LigatHaal} from "#/data/static/Leagues";
 
 export const FootballLigatHaal: NavigationOption = NavigationOption.create(
-    new IRString('football.ligathaal'),
+    LigatHaal.name,
     '/football/israel/ligathaal',
-    'https://flagcdn.com/w40/il.png'
+    LigatHaal.imageSrc
 );
 export const FootballIsrael:NavigationOption = NavigationOption.create(
     new IRString('country.israel'),

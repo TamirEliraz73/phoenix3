@@ -1,4 +1,4 @@
-import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import SeasonTeam from "#/data/static/SeasonTeam";
 import {
     Ajax,
     Arsenal,
@@ -29,7 +29,7 @@ import {
     Tottenham,
     UnionSG,
     Villarreal
-} from "../../../../../data/static/Teams";
+} from "#/data/static/teams";
 
 export const ChampionsLeague25_26LiveData: SeasonTeam[] = [
     SeasonTeam.create(Ajax, 0, 0, 0, 0, 0),

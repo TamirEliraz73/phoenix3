@@ -59,7 +59,7 @@ export default function RootLayoutClient({children}: { children: React.ReactNode
                     {allNavigationOptions.map((op) => {
                         const isDropdown = !!op.children;
                         return (
-                            <div key={UIdGenerator.generate()}>
+                            <div key={UIdGenerator.generate()} className={'select-none'}>
                                 {isDropdown ? <DropdownButton op={op}/> : <NavButton op={op}/>}
                             </div>
                         )
@@ -77,32 +77,3 @@ export default function RootLayoutClient({children}: { children: React.ReactNode
         </div>
     )
 }
-
-// export default function RootLayoutClient({children}: { children: React.ReactNode }): JSX.Element {
-//     return (
-//         <>
-//             <MyHeader/>
-//             <div className="flex min-h-screen mt-12">
-//                 {/* Sidebar */}
-//                 <aside className="w-60 bg-gray-800 text-white p-4 space-y-2">
-//                     {allNavigationOptions.map((op) => {
-//                         const isDropdown = !!op.children;
-//                         // const isOpen = openDropdown === op.name.key
-//
-//                         return (<div key={UIdGenerator.generate()}>
-//                             {isDropdown ? <DropdownButton op={op}/> : <NavButton op={op}/>}
-//                         </div>)
-//                     })}
-//                 </aside>
-//
-//                 {/* Main area: header + content */}
-//                 <div className="flex flex-col flex-1 min-w-0">
-//                     {/* Main Content */}
-//                     <main className="flex-1 overflow-auto">
-//                         {children}
-//                     </main>
-//                 </div>
-//             </div>
-//         </>
-//     );
-// }

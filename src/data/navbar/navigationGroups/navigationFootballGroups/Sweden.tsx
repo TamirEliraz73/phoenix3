@@ -1,10 +1,11 @@
 import {IRString} from "@/lib/i18n/IRString";
 import NavigationOption from "@/data/navbar/NavigationOption";
+import {Allsvenskan} from "#/data/static/Leagues";
 
 export const FootballAllsvenskan: NavigationOption = NavigationOption.create(
-    new IRString('football.allsvenskan'),
+    Allsvenskan.name,
     '/football/sweden/allsvenskan',
-    'https://1000logos.net/wp-content/uploads/2019/01/Allsvenskan-Logo-2012-768x432.png'
+    Allsvenskan.imageSrc
 );
 export const FootballSweden:NavigationOption = NavigationOption.create(
     new IRString('country.sweden'),

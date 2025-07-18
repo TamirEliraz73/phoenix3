@@ -1,10 +1,11 @@
 import NavigationOption from "@/data/navbar/NavigationOption";
 import {IRString} from "@/lib/i18n/IRString";
+import {LaLiga} from "#/data/static/Leagues";
 
 export const FootballLaLiga: NavigationOption = NavigationOption.create(
-    new IRString('football.laliga'),
+    LaLiga.name,
     '/football/spain/laliga',
-    'https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2016-768x432.png'
+    LaLiga.imageSrc
 );
 export const FootballSpain:NavigationOption = NavigationOption.create(
     new IRString('country.spain'),

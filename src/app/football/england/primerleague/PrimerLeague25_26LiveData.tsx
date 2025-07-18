@@ -1,4 +1,4 @@
-import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import SeasonTeam from "#/data/static/SeasonTeam";
 import {
     Arsenal,
     AstonVilla,
@@ -20,7 +20,7 @@ import {
     TottenhamHotspur,
     WestHamUnited,
     Wolverhampton
-} from "../../../../../data/static/Teams";
+} from "#/data/static/teams";
 
 export const PrimerLeague25_26LiveData: SeasonTeam[] = [
     SeasonTeam.create(Arsenal, 0, 0, 0, 0, 0),

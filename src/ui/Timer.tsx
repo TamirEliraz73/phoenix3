@@ -18,14 +18,20 @@ export default function Timer({targetTime}: { targetTime: DateTime }): JSX.Eleme
             {diff ?
                 <div className={'flex flex-col'}>
                     <div className={'flex flex-row gap-2'}>
-                        <div
-                            className={'flex justify-items-start text-yellow-400'}>{(diff?.weeks ?? 1) > 1 && `${diff.weeks} שבועות `}</div>
-                        <div
-                            className={'flex justify-items-start text-red-400'}>{(diff?.days ?? 1) > 1 && `${diff.days} ימים `}</div>
+                        <div className={'flex justify-items-start text-yellow-400'}>
+                            {(diff?.weeks ?? 0) > 1 && `${diff.weeks} שבועות `}
+                        </div>
+                        <div className={'flex justify-items-start text-red-400'}>
+                            {((diff?.days ?? 0) > 1 || (diff?.weeks && diff.weeks > 0)) && `${diff.days} ימים `}
+                        </div>
                     </div>
                     <div className={'flex flex-row gap-2'}>
-                        <div className={'justify-items-start text-blue-400'}>{`${diff.hours} שעות `}</div>
-                        <div className={'justify-items-start text-green-400'}>{`${diff.minutes} דקות `}</div>
+                        <div className={'justify-items-start text-blue-400'}>
+                            {`${diff.hours} שעות `}
+                        </div>
+                        <div className={'justify-items-start text-green-400'}>
+                            {`${diff.minutes} דקות `}
+                        </div>
                     </div>
                     {/*<div className={'flex flex-row'}>*/}
                     {/*    <div*/}

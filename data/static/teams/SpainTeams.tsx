@@ -1,0 +1,23 @@
+import Team from "../Team";
+import {ChampionsLeague, LaLiga} from "../Leagues";
+
+export const Alaves: Team = Team.create("football.alaves", LaLiga, "football.mendizorrotza", 'https://assets.stickpng.com/images/584ad125b519ea740933a895.png');
+export const AthleticBilbao: Team = Team.create("football.athleticbilbao", [LaLiga, ChampionsLeague], "football.sanmames", 'https://assets.stickpng.com/images/584ad135b519ea740933a896.png');
+export const AtleticoMadrid: Team = Team.create("football.atleticomadrid", [LaLiga, ChampionsLeague], "football.metropolitano", 'https://assets.stickpng.com/images/584a9b63b080d7616d29877a.png');
+export const Barcelona: Team = Team.create("football.barcelona", [LaLiga, ChampionsLeague], "football.campnou", 'https://assets.stickpng.com/images/584a9b3bb080d7616d298777.png');
+export const CeltaVigo: Team = Team.create("football.celtavigo", LaLiga, "football.balaidos", 'https://assets.stickpng.com/images/584ad3c4b519ea740933a8df.png');
+export const Elche: Team = Team.create("football.elche", LaLiga, "football.martinezvalero", 'https://assets.stickpng.com/images/584ad4e5b519ea740933a901.png');
+export const Espanyol: Team = Team.create("football.espanyol", LaLiga, "football.rcdestadium", 'https://assets.stickpng.com/images/584ad3b5b519ea740933a8dd.png');
+export const Getafe: Team = Team.create("football.getafe", LaLiga, "football.coliseum", 'https://assets.stickpng.com/images/584ad4b1b519ea740933a8fc.png');
+export const Girona: Team = Team.create("football.girona", LaLiga, "football.montilivi", 'https://assets.stickpng.com/images/584ad4b8b519ea740933a8fd.png');
+export const Levante: Team = Team.create("football.levante", LaLiga, "football.ciutatvalencia");
+export const Mallorca: Team = Team.create("football.mallorca", LaLiga, "football.mallorcasonmoix", 'https://assets.stickpng.com/images/584ad3aeb519ea740933a8dc.png');
+export const Osasuna: Team = Team.create("football.osasuna", LaLiga, "football.elsadar", 'https://assets.stickpng.com/images/584ad403b519ea740933a8e7.png');
+export const RayoVallecano: Team = Team.create("football.rayovallecano", LaLiga, "football.vallecas");
+export const RealBetis: Team = Team.create("football.realbetis", LaLiga, "football.lacartuja", 'https://assets.stickpng.com/images/584ad396b519ea740933a8d9.png');
+export const RealMadrid: Team = Team.create("football.realmadrid", [LaLiga, ChampionsLeague], "football.santiagobernabeu", 'https://assets.stickpng.com/images/584a9b47b080d7616d298778.png');
+export const RealOviedo = Team.create("football.realoviedo", LaLiga, "football.carlostartiere", 'https://assets.stickpng.com/images/584ad377b519ea740933a8d5.png');
+export const RealSociedad: Team = Team.create("football.realsociedad", LaLiga, "football.anoeta", 'https://assets.stickpng.com/images/584ad36ab519ea740933a8d3.png');
+export const Sevilla: Team = Team.create("football.sevilla", LaLiga, "football.ramonsanchezpizjuan", 'https://assets.stickpng.com/images/584ad291b519ea740933a8ba.png');
+export const Valencia: Team = Team.create("football.valencia", LaLiga, "football.mestalla", 'https://assets.stickpng.com/images/584ad186b519ea740933a89e.png');
+export const Villarreal: Team = Team.create("football.villarreal", [LaLiga, ChampionsLeague], "football.estadiodelaceramica", 'https://assets.stickpng.com/images/584a9b57b080d7616d298779.png');

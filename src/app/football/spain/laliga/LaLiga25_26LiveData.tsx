@@ -1,4 +1,4 @@
-import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import SeasonTeam from "#/data/static/SeasonTeam";
 import {
     Alaves,
     AthleticBilbao,
@@ -18,7 +18,7 @@ import {
     RealSociedad,
     Sevilla,
     Valencia, Villarreal
-} from "../../../../../data/static/Teams";
+} from "#/data/static/teams";
 
 export const LaLiga25_26LiveData:SeasonTeam[] = [
     SeasonTeam.create(Alaves,0,0,0,0,0),

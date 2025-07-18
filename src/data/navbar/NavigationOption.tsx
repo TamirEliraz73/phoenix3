@@ -1,5 +1,4 @@
 import {IRString} from "@/lib/i18n/IRString";
-import {Football, Resources, Subjects} from "@/data/navbar/navigationGroups";
 
 export default class NavigationOption {
     private constructor(public readonly name: IRString,

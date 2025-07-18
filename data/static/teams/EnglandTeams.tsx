@@ -1,0 +1,23 @@
+import Team from "../Team";
+import {ChampionsLeague, PremierLeague} from "../Leagues";
+
+export const Arsenal: Team = Team.create("football.arsenal", [PremierLeague, ChampionsLeague], "football.emirates", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4df.png');
+export const AstonVilla: Team = Team.create("football.astonvilla", [PremierLeague], "football.villapark", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e4.png');
+export const Bournemouth: Team = Team.create("football.bournemouth", [PremierLeague], "football.vitality", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4de.png');
+export const Brentford: Team = Team.create("football.brentford", [PremierLeague], "football.gtech");
+export const Brighton: Team = Team.create("football.brighton", [PremierLeague], "football.amex");
+export const Burnley: Team = Team.create("football.burnley", [PremierLeague], "football.turfmoor");
+export const Chelsea: Team = Team.create("football.chelsea", [PremierLeague, ChampionsLeague], "football.stamfordbridge", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e1.png');
+export const CrystalPalace: Team = Team.create("football.crystalpalace", [PremierLeague], "football.selhurst", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e2.png');
+export const Everton: Team = Team.create("football.everton", [PremierLeague], "football.goodison", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e3.png');
+export const Fulham: Team = Team.create("football.fulham", [PremierLeague], "football.craven");
+export const LeedsUnited: Team = Team.create("football.leedsunited", [PremierLeague], "football.elland");
+export const Liverpool = Team.create("football.liverpool", [PremierLeague, ChampionsLeague], "football.anfield", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e5.png');
+export const ManchesterCity = Team.create("football.manchestercity", [PremierLeague, ChampionsLeague], "football.etihad", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e6.png');
+export const ManchesterUnited: Team = Team.create("football.manchesterunited", [PremierLeague], "football.oldtrafford", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e7.png');
+export const NewcastleUnited = Team.create("football.newcastle", [PremierLeague, ChampionsLeague], "football.stjames", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ec.png');
+export const NottinghamForest: Team = Team.create("football.nottinghamforest", [PremierLeague], "football.cityground");
+export const Sunderland: Team = Team.create("football.sunderland", [PremierLeague], "football.light", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4f0.png');
+export const TottenhamHotspur: Team = Team.create("football.tottenhamhotspur", [PremierLeague], "football.tottenhamstadium", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ee.png');
+export const WestHamUnited: Team = Team.create("football.westhamunited", [PremierLeague], "football.london", 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c4f1.png');
+export const Wolverhampton: Team = Team.create("football.wolverhampton", [PremierLeague], "football.molineux");

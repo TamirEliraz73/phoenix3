@@ -3,11 +3,11 @@ import {useTranslation} from "@/lib/i18n/LocaleTranslation";
 import {LocaleNamespace} from "@/lib/i18n/config";
 import Image from "next/image";
 import {JSX} from "react";
-import Team from "../../../data/static/Team";
+import Team from "#/data/static/Team";
 import {IRString} from "@/lib/i18n/IRString";
 import Timer from "@/ui/Timer";
 import {DateTime} from "luxon";
-import {Barcelona, RealMadrid} from "../../../data/static/Teams";
+import {Barcelona, RealMadrid} from "#/data/static/teams";
 
 interface NextMatchProps {
     teamA: Team;
