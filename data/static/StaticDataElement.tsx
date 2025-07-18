@@ -1,15 +1,14 @@
 'use client'
 import {IRString} from "@/lib/i18n/IRString";
+import UIdGenerator from "@/generators/UIdGenerator";
 
 
 export default abstract class StaticDataElement {
-    private static _ids: number = 0
     public readonly id: number;
     public readonly irTranslatedName: IRString;
-    public readonly translatedName!: string;
 
-    protected constructor(public readonly name: string, irNameOverride?: string) {
-        this.id = ++StaticDataElement._ids;
-        this.irTranslatedName = new IRString(irNameOverride ?? name);
+    protected constructor(public readonly name: string | IRString) {
+        this.id = UIdGenerator.generate();
+        this.irTranslatedName = typeof name === 'string' ? new IRString(name) : name;
     }
 }

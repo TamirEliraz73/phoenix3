@@ -20,14 +20,30 @@ const nextConfig: NextConfig = {
             protocol: 'https',
             hostname: 'flagcdn.com',
             pathname: '/w40/**',
-        },{
+        }, {
             protocol: 'https',
             hostname: 'www.fcbarcelona.com',
             pathname: '/resources/**',
-        },{
+        }, {
             protocol: 'https',
             hostname: 'www.flagcolorcodes.com',
             pathname: '/data/**',
+        }, {
+            protocol: 'https',
+            hostname: 'w7.pngwing.com',
+            pathname: '/pngs/**'
+        }, {
+            protocol: 'https',
+            hostname: 'logos-world.net',
+            pathname: '/wp-content/uploads/**',
+        }, {
+            protocol: 'https',
+            hostname: '1000logos.net',
+            pathname: '/wp-content/uploads/**'
+        }, {
+            protocol: 'https',
+            hostname: 'assets.stickpng.com',
+            pathname: '/images/**'//https://assets.stickpng.com/images/584a9b3bb080d7616d298777.png
         }]
     }
 };

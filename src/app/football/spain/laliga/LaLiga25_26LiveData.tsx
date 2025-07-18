@@ -1,0 +1,43 @@
+import SeasonTeam from "../../../../../data/static/SeasonTeam";
+import {
+    Alaves,
+    AthleticBilbao,
+    AtleticoMadrid,
+    Barcelona,
+    CeltaVigo,
+    Elche,
+    Espanyol,
+    Getafe,
+    Girona,
+    Levante,
+    Mallorca,
+    Osasuna,
+    RayoVallecano,
+    RealBetis,
+    RealMadrid, RealOviedo,
+    RealSociedad,
+    Sevilla,
+    Valencia, Villarreal
+} from "../../../../../data/static/Teams";
+
+export const LaLiga25_26LiveData:SeasonTeam[] = [
+    SeasonTeam.create(Alaves,0,0,0,0,0),
+    SeasonTeam.create(AthleticBilbao,0,0,0,0,0),
+    SeasonTeam.create(AtleticoMadrid,0,0,0,0,0),
+    SeasonTeam.create(Barcelona,0,0,0,0,0),
+    SeasonTeam.create(CeltaVigo,0,0,0,0,0),
+    SeasonTeam.create(Elche,0,0,0,0,0),
+    SeasonTeam.create(Espanyol,0,0,0,0,0),
+    SeasonTeam.create(Getafe,0,0,0,0,0),
+    SeasonTeam.create(Girona,0,0,0,0,0),
+    SeasonTeam.create(Levante,0,0,0,0,0),
+    SeasonTeam.create(Mallorca,0,0,0,0,0),
+    SeasonTeam.create(Osasuna,0,0,0,0,0),
+    SeasonTeam.create(RayoVallecano,0,0,0,0,0),
+    SeasonTeam.create(RealBetis,0,0,0,0,0),
+    SeasonTeam.create(RealMadrid,0,0,0,0,0),
+    SeasonTeam.create(RealOviedo,0,0,0,0,0),
+    SeasonTeam.create(RealSociedad,0,0,0,0,0),
+    SeasonTeam.create(Sevilla,0,0,0,0,0),
+    SeasonTeam.create(Valencia,0,0,0,0,0),
+    SeasonTeam.create(Villarreal,0,0,0,0,0)]

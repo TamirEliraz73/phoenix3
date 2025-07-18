@@ -1,8 +1,9 @@
 import StaticDataElement from "./StaticDataElement";
 import {getById, getValuesOf} from "./UtilityFunctions";
+import {IRString} from "@/lib/i18n/IRString";
 
 export default class Continent extends StaticDataElement {
-    private constructor(name: string) { super(name);}
+    private constructor(name: IRString | string) { super(name);}
 
     public static readonly Europe: Continent = new Continent("Europe");
 

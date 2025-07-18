@@ -41,31 +41,68 @@ export function MyHeader(): JSX.Element {
     )
 }
 
+export  function Footer(): JSX.Element {
+    return (
+        <footer className="h-16 flex items-center justify-center text-sm text-gray-400 border-t border-gray-700">
+            <p>© 2025 My Own Phoenix</p>
+        </footer>
+    );
+}
+
 export default function RootLayoutClient({children}: { children: React.ReactNode }): JSX.Element {
     return (
-        <>
+        <div className="flex flex-col h-full min-h-screen">
             <MyHeader/>
-            <div className="flex min-h-screen mt-12">
+            <div className="flex flex-1 mt-12">
                 {/* Sidebar */}
                 <aside className="w-60 bg-gray-800 text-white p-4 space-y-2">
                     {allNavigationOptions.map((op) => {
                         const isDropdown = !!op.children;
-                        // const isOpen = openDropdown === op.name.key
-
-                        return (<div key={UIdGenerator.generate()}>
-                            {isDropdown ? <DropdownButton op={op}/> : <NavButton op={op}/>}
-                        </div>)
+                        return (
+                            <div key={UIdGenerator.generate()}>
+                                {isDropdown ? <DropdownButton op={op}/> : <NavButton op={op}/>}
+                            </div>
+                        )
                     })}
                 </aside>
 
-                {/* Main area: header + content */}
-                <div className="flex flex-col flex-1 min-w-0">
-                    {/* Main Content */}
-                    <main className="flex-1 bg-white overflow-auto">
+                {/* Main area */}
+                <div className="flex flex-col flex-1 min-w-0 bg-gradient-to-br from-[#1e1e2f] via-[#2e2e4d] to-[#1e1e2f] text-white">
+                    <main className="flex-1 overflow-auto pb-10">
                         {children}
                     </main>
+                    <Footer/>
                 </div>
             </div>
-        </>
-    );
+        </div>
+    )
 }
+
+// export default function RootLayoutClient({children}: { children: React.ReactNode }): JSX.Element {
+//     return (
+//         <>
+//             <MyHeader/>
+//             <div className="flex min-h-screen mt-12">
+//                 {/* Sidebar */}
+//                 <aside className="w-60 bg-gray-800 text-white p-4 space-y-2">
+//                     {allNavigationOptions.map((op) => {
+//                         const isDropdown = !!op.children;
+//                         // const isOpen = openDropdown === op.name.key
+//
+//                         return (<div key={UIdGenerator.generate()}>
+//                             {isDropdown ? <DropdownButton op={op}/> : <NavButton op={op}/>}
+//                         </div>)
+//                     })}
+//                 </aside>
+//
+//                 {/* Main area: header + content */}
+//                 <div className="flex flex-col flex-1 min-w-0">
+//                     {/* Main Content */}
+//                     <main className="flex-1 overflow-auto">
+//                         {children}
+//                     </main>
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }

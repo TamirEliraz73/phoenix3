@@ -24,16 +24,21 @@ export default async function RootLayout({children}: { children: React.ReactNode
         : LocaleCode.EN
     const direction = getDirection(locale)
     return (
-        <html lang={locale} dir={direction.asString}>
-            <body className="bg-gray-100 text-gray-900">
+        <html lang={locale} dir={direction.asString} className="h-full">
+            <body className=" min-h-screen h-full bg-gray-100 text-gray-900">
                 <LocaleProvider initialLocale={locale}>
                     <InitStaticTranslationsProvider/>
                     <RootLayoutClient>
-                        <div
-                            className="bg-gradient-to-br from-[#1e1e2f] via-[#2e2e4d] to-[#1e1e2f] text-white">
+                        {/*<div*/}
+                        {/*    className="bg-gradient-to-br from-[#1e1e2f] via-[#2e2e4d] to-[#1e1e2f] text-white">*/}
                             {children}
-                        </div>
+                        {/*</div>*/}
                     </RootLayoutClient>
+                    {/*<RootLayoutClient>*/}
+                    {/*    /!*<div className="min-h-screen flex flex-col bg-gradient-to-br from-[#1e1e2f] via-[#2e2e4d] to-[#1e1e2f] text-white">*!/*/}
+                    {/*        {children}*/}
+                    {/*    /!*</div>*!/*/}
+                    {/*</RootLayoutClient>*/}
                 </LocaleProvider>
             </body>
         </html>

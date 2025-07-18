@@ -1,11 +1,9 @@
 'use client'
 import React from 'react'
 // import { Button } from '@/components/ui/button'
-import {ArrowRight} from 'lucide-react'
-import Link from 'next/link'
-import {motion} from 'framer-motion'
-import {PhoenixBtn} from "@/ui/dsl/PhoenixButton";
 import Image from "next/image";
+import Timer from "@/ui/Timer";
+import {DateTime, Zone} from "luxon";
 
 export default function Home() {
     return (
@@ -29,6 +27,7 @@ export default function Home() {
                         priority
                         className="mx-auto mt-12 drop-shadow-2xl animate-fade-in-up"
                     />
+                    <Timer targetTime={DateTime.fromISO("2025-08-16T20:30:00.000+03:00")}/>
 
                     <div className="mt-10 flex flex-wrap justify-center gap-6">
                         <a href="/subjects" className="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
